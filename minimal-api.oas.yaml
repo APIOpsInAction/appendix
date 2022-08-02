@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Minimal API
+  description: "Todo"
+  contact:
+    name: Todo
+    url: "https://example.com"
+    email: todo@example.com
+  version: "1.0"
+servers:
+  - url: "http://{host}:{port}"
+    variables:
+      host:
+        default: localhost
+      port:
+        default: "8000"
+tags:
+  - name: Default Tag
+    description: Some description of the tag
+
+paths:
+  /todo:
+    get:
+      tags: 
+        - Default Tag
+      summary: TODO
+      operationId: todo
+      description: "Todo"
+      responses:
+        "200":
+          description: Todo
