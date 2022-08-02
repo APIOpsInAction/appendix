@@ -8,16 +8,10 @@ info:
     email: todo@example.com
   version: "1.0"
 servers:
-  - url: "https://{host}:{port}"
-    variables:
-      host:
-        default: localhost
-      port:
-        default: "8000"
+  - url: "https://localhost:8000"
 tags:
   - name: Default Tag
     description: Some description of the tag
-
 paths:
   /todo:
     get:
