@@ -8,7 +8,7 @@ info:
     email: todo@example.com
   version: "1.0"
 servers:
-  - url: "http://{host}:{port}"
+  - url: "https://{host}:{port}"
     variables:
       host:
         default: localhost
