@@ -1,1 +1,0 @@
-A minimal OpenAPI spec
